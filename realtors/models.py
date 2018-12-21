@@ -7,7 +7,7 @@ class Realtor(models.Model):
     photo = models.ImageField(upload_to='photo/%Y/%m/%d/')
     description = models.TextField(blank=True)
     phone = models.CharField(max_length=20)
-    email = models.TextField(max_length=20)
+    email = models.CharField(max_length=50)
     is_mvp = models.BooleanField(default=False)
     hire_date = models.DateTimeField(default=datetime.now, blank=True)
     is_mvp = models.BooleanField(default=False)
